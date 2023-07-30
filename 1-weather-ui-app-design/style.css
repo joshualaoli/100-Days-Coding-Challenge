@@ -1,0 +1,144 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #37474f;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content */
+.container {
+    height: 400px;
+    background-color: #232931;
+    color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.left-info {
+    width: 260px;
+    height: 100%;
+    float: left;
+    display: flex;
+    border-radius: 24px;
+    justify-content: center;
+    background: url(./img/sunny.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03) perspective(200px);
+    cursor: pointer;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.541);
+    transition: all 0.4s ease;
+}
+.left-info:hover {
+    transform: scale(1.1) perspective(2500px) rotateY(5deg);
+}
+.pic-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #091347, #031735 100%);
+    border-radius: 24px;
+    opacity: 0.5;
+}
+.today-info {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.today-weather {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 20px;
+    left: 20px;
+}
+.today-weather .bx{
+    font-size: 4.6rem;
+}
+.weather-temp {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.right-info {
+    float: right;
+    position: relative;
+    height: 100%;
+    padding-top: 25px;
+}
+.day-info {
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+.day-info div:not(:last-child) {
+    margin-bottom: 6px;
+}
+.day-info div .title {
+    font-weight: 700;
+}
+.day-info div .value {
+    float: right;
+}
+.day-list {
+    display: flex;
+    list-style: none;
+    margin: 10px 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+.day-list li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    transform: all 0.4s ease;
+    border-radius: 10px;
+}
+.day-list li .bx {
+    margin: 10px;
+    font-size: 2rem;
+}
+.day-list li:hover {
+    transform: scale(1.15);
+    background: #fff;
+    color: #232931;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.day-list li .day-temp {
+    margin-top: 10px;
+    font-weight: 700;
+}
+.btn-container {
+    margin: 25px 35px;
+}
+.loc-button {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background: #17215c;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease;
+}
+.loc-button:hover {
+    background: #0f356d;
+}
