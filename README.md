@@ -9,9 +9,15 @@ I learn Front end tutorial from YouTube
 Here is the screenshot :
 ![screenshot](./1-weather-ui-app-design/image.png)
 
+<!-- ------------------------------------- -->
+
 ### Day #2 - Simple Text Editor | Daily coding challenge
 
 ## Screenshot
 
 Here is the screenshot :
 ![screenshot](./2-text-editor/image.png)
+
+<!-- -------------------------------------- -->
+
+### Day 3 - Receipt app | Daily coding challenge
