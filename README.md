@@ -21,3 +21,5 @@ Here is the screenshot :
 <!-- -------------------------------------- -->
 
 ### Day 3 - Receipt app | Daily coding challenge
+
+we use API to search meal by name : https://www.themealdb.com/api.php
