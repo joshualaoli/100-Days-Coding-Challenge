@@ -41,12 +41,12 @@ function searchMeal() {
       </div>
       <img src= ${meal.strMealThumb} alt=${meal.strMeal} />
       <div id="ingre-container">
-        <h3>Ingredients : </h3>
+        <h3>Ingredients :</h3>
         <ul>${ingredients}</ul>
       </div>
       <div id="recipe">
         <button id="hide-recipe">X</button>
-        <pre id="instructions">${meal.strInstuctions}</pre>
+        <pre id="instructions">${meal.strInstructions}</pre>
       </div>
       <button id="show-recipe">View Recipe</button>
     `;
@@ -61,13 +61,13 @@ function searchMeal() {
       searchContainer.style.opacity = "0";
 
       searchContainer.style.display = "none";
+    })
+    // Handle Error
+    .catch(() => {
+      searchContainer.style.opacity = "1";
+      searchContainer.style.display = "grid";
+      resultContainer.innerHTML = `<h3>Error fetching data!</h3>`;
     });
-  // Handle Error
-  // .catch (() => {
-  //   searchContainer.style.opacity = "1";
-  //   searchContainer.style.display = "grid";
-  //   resultContainer.innerHTML = "<h3>Error Fetching Data!</h3>";
-  // });
 }
 
 // generate html for lists of ingredients
@@ -77,7 +77,7 @@ function getIngredients(meal) {
   for (let i = 1; i <= 25; i++) {
     const ingredient = meal[`strIngredient${i}`];
     if (ingredient) {
-      const measure = meal[`strMeasure ${i}`];
+      const measure = meal[`strMeasure${i}`];
       ingreHtml += `<li> ${measure} ${ingredient} </li>`;
     }
     // If ingredient doesnt exist, exit loop
@@ -93,7 +93,6 @@ function hideRecipe() {
   const recipe = document.getElementById("recipe");
   recipe.style.display = "none";
 }
-
 function showRecipe() {
   const recipe = document.getElementById("recipe");
   recipe.style.display = "block";
