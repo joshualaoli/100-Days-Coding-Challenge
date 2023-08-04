@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="form">
+      <div class="forms">
         <div class="form login">
           <span class="title"> Login </span>
           <form action="" name="loginForm">
@@ -44,9 +44,65 @@
 
             <!-- button -->
             <div class="input-field btn">
-              <input type="submit" value="login" />
+              <input type="submit" value="Login" />
             </div>
           </form>
+          <div class="login-signup">
+            <span class="text">Not a member?</span>
+            <a href="#" class="text signup-link">Sign up</a>
+          </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form signup">
+          <span class="title">Registration</span>
+          <form action="" name="signup-form">
+            <div class="input-field">
+              <input type="text" name="name" placeholder="Enter your name" />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" placeholder="Enter your email" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Create password"
+              />
+              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-eye-slash"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Confirm password"
+              />
+              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-eye-slash"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logcheck" />
+                <label for="logcheck" class="text"
+                  >I accepted all terms and conditions</label
+                >
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="input-field btn">
+              <input type="submit" value="Signup" />
+            </div>
+          </form>
+          <div class="login-signup">
+            <span class="text">Already a member?</span>
+            <a href="#" class="text signup-link">Login Now</a>
+          </div>
         </div>
       </div>
     </div>
