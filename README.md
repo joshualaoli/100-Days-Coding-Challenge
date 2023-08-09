@@ -22,9 +22,20 @@ Here is the screenshot :
 
 ### Day 3 - Receipt app | Daily coding challenge
 
-we use API to search meal by name : https://www.themealdb.com/api.php
+- In this section I learn how to use API from https://www.themealdb.com/api.php to my Website and how to show recipe using JavaScript
+
+-Skills : HTML, CSS, JavaScript
 
 Here is the screenshot :
 ![Daily code challenge 3 - receipt app with JavaScript](./3-receipt-app/image.png)
 
 <!-- ----------------------------------- -->
+
+## Day 4 - Login and Registration Form
+
+- In this section I learn how to create Login and Registration Form and how to show and hide password toggle
+
+- Skills : HTML, CSS, JavaScript
+
+Here is the screenshot :
+![screenshot](./4-form/)
