@@ -1,0 +1,54 @@
+/* General Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#0c6dff 50%, #ffd30f 50%);
+}
+
+/* Content Style */
+.container {
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 3em 1.5em;
+    background: #1e293b;
+    border-radius: 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 16px;
+}
+.search-container input,
+.search-container button {
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+}
+.search-container input {
+    background-color: transparent;
+    border: 1px solid #858585;
+    padding: 6px;
+    color: #fff;
+}
+.search-container input:focus {
+    border-color: #fff;
+}
+.search-container button {
+    background-color: #ffd30f;
+    color: #1e293b;
+    border: none;
+    cursor: pointer;
+}

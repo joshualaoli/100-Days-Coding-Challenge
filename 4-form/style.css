@@ -27,10 +27,10 @@ body {
 
 /* Content Style */
 .container .forms {
-    display: wrap;
+    /* display: flex; */
     align-items: center;
     height: 440px;
-    width: 200;
+    width: 100%;
     transition: height 0.2s ease;
 }
 .container .form {

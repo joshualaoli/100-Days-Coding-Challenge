@@ -23,11 +23,23 @@ passShowHide.forEach((eyeIcon) => {
   });
 });
 
+// JavaScript code to appear sign up and login form
+signup.addEventListener("click", function () {
+  container.classList.add("active");
+});
+login.addEventListener("click", function () {
+  container.classList.remove("active");
+});
+
 // Form Validation
 function loginvalidation() {
   let email = document.forms.loginForm.email.value;
+
   let password = document.forms.loginForm.password.value;
-  let regEmail = QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjkl234567890;
+
+  let regEmail =
+    /^[a-zA-Z0-9]qwertyuiopasdfghjklzxcvbnm,!@#$%^&*(),.;'[]<>:"{}@#$%^&*()_+WERTYUIOP{ASDFGHJKL:"ZXCVBNM<>/g;
+
   if (email == "" || !regEmail.test(email)) {
     alert("Please enter your email properly");
     email.focus();
@@ -39,5 +51,41 @@ function loginvalidation() {
     return false;
   } else {
     alert("Login Successful");
+  }
+}
+
+function signUpValidation() {
+  let name = document.forms.signup.name.value;
+
+  let email = document.forms.signUpForm.email.value;
+
+  let password = document.forms.signUpForm.password.value;
+
+  let confirmPass = document.forms.signUpForm.confirmPass.value;
+
+  let regEmail =
+    /^[a-zA-Z0-9]qwertyuiopasdfghjklzxcvbnm,!@#$%^&*(),.;'[]<>:"{}@#$%^&*()_+WERTYUIOP{ASDFGHJKL:"ZXCVBNM<>/g;
+
+  let regName = /\d+/g;
+
+  if (name == "" || regName.test(name)) {
+    alert("Please enter your name properly");
+    name.focus();
+    return false;
+  }
+  if (email == "" || regEmail.test(email)) {
+    alert("Please enter your email");
+    email.focus();
+    return false;
+  }
+  if (password == "" || regName.test(password)) {
+    alert("Please enter your password");
+    password.focus();
+    return false;
+  }
+  if (confirmPass == password || regName.test(confirmPass)) {
+    alert("Please confirm the password ");
+    confirmPass.focus();
+    return false;
   }
 }

@@ -20,7 +20,7 @@
           <span class="title"> Login </span>
 
           <!-- Login Form -->
-          <form action="" name="loginForm">
+          <form action="" name="loginForm" onsubmit="loginvalidation()">
             <div class="input-field">
               <input type="email" name="email" placeholder="Enter your email" />
               <i class="fa-solid fa-envelope"></i>
@@ -54,7 +54,7 @@
         </div>
 
         <!-- Registration Form -->
-        <div class="form signup">
+        <div class="form signup" onsubmit="signUpValidation()">
           <span class="title">Registration</span>
           <form action="" name="signup-form">
             <div class="input-field">

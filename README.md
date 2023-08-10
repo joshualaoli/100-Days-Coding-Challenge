@@ -39,3 +39,11 @@ Here is the screenshot :
 
 Here is the screenshot :
 ![screenshot](./4-form/)
+
+<!-- -------------------------------------- -->
+
+## Day 5- Movie App
+
+- In this section I learn how to create Movie app use movie database API (https://www.omdbapi.com/) and responsive web
+
+-Skills : HTML, CSS, JavaScript
