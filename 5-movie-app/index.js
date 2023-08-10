@@ -33,11 +33,38 @@ let getMovie = () => {
 
                     <div class="details">
                         <span>${data.Rated} </span>
+                        <span>${data.Year} </span>
+                        <span>${data.Runtime} </span>
+                    </div>
+
+                    <div class= "genre'>
+                        ${data.Genre.split(",").join("</div><div>")}
                     </div>
                 </div>
             </div>
+
+            <h3>Plot</h3>
+            <p>${data.Plot} </p>
+            <h3>Cast</h3>
+            <p>${data.Actors} </p>
             `;
         }
+
+        // if movie doesn-t excist in database
+        else {
+          result.innerHTML = `
+          <h3 class="msg">${data.Error} </h3>
+          `;
+        }
+      })
+      //   If error occurs(terjadi)
+      .catch(() => {
+        result.innerHTML = `
+        <h3 class="msg">Error Occured</h3>
+        `;
       });
   }
 };
+
+searchBtn.addEventListener("click", getMovie);
+window.addEventListener("load", getMovie);
