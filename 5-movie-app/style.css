@@ -52,3 +52,13 @@ body {
     border: none;
     cursor: pointer;
 }
+.search-container button:hover {
+    background-color: #dbb404;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* Logic style */
+#result {
+    color: #fff;
+}
